@@ -1,9 +1,5 @@
-*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
+# Operationalizing Machine Learning
 
-
-# Your Project Title Here
-
-*TODO:* Write an overview to your project.
 
 In this project our first goal was to configure an AutoML Classification run using the Bankmarketing dataset and deploy the best model, then set-up the endpoint for it and consume it. The main steps were:
 1. Set-up an AutoML run and deploy the best model;
@@ -16,7 +12,7 @@ Our second goal was to configure an Pipeline with AutoML on the Bankmakreting da
 3. Consume the Pipeline endpoint. 
 
 ## Architectural Diagram
-*TODO*: Provide an architectual diagram of the project and give an introduction of each step. An architectural diagram is an image that helps visualize the flow of operations from start to finish. In this case, it has to be related to the completed project, with its various stages that are critical to the overall flow. For example, one stage for managing models could be "using Automated ML to determine the best model".
+
 
 Below we have the architectural diagram for both the model deployment part and the pipeline deployment part.
 
@@ -29,7 +25,6 @@ In the pipeline deplpyment section, we use a compute instance to run the Jupyter
 In the future, we could improve the workflow by using Jupyter Notebook and the Azure Python SDK or a python or shell script to automatically or streamline the set-up the AutoML run, deployment of the best model and consuming of the endpoint. A further improvement would be integrating the steps for model deployment and for the Pipeline deployment into one Jupyter Notebook.
 
 ## Key Steps
-*TODO*: Write a short discription of the key steps. Remeber to include all the screenshots required to demonstrate key steps. 
 
 
 The key steps in our project were the following:
@@ -110,7 +105,7 @@ The key steps in our project were the following:
 
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
+
 
 Below, we have a screencast that demostrates: 
 * Working deployed ML model endpoint.
@@ -121,6 +116,5 @@ Below, we have a screencast that demostrates:
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/DoFEO-WXN0A/0.jpg)](https://www.youtube.com/watch?v=DoFEO-WXN0A)
 
 ## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
 
 In this project, after deploying the best model with enabled logging as well as set-up a benchmark using the Apache Benchmark tool and the benchmark.sh shell script.
