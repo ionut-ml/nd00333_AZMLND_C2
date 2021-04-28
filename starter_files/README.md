@@ -22,7 +22,8 @@ In the pipeline deplpyment section, we use a compute instance to run the Jupyter
 
 ![Alt text](./MLOps-Diagram.png)
 
-In the future, we could improve the workflow by using Jupyter Notebook and the Azure Python SDK or a python or shell script to automatically or streamline the set-up the AutoML run, deployment of the best model and consuming of the endpoint. A further improvement would be integrating the steps for model deployment and for the Pipeline deployment into one Jupyter Notebook.
+In order to improve the AutoML model performance, we could increase the Training job time to 2 hours giving the algorithms more time to learn the dataset and improve their predictions. We could also use the AUC Weighted specifically as the primary metric as it is a better choice than Accuracy for imbalanced datasets like the Bankmarketing one. This will allow the models to shoot for better performance in the right metric. Another strategy is to use a larger sample space in conjunction with Random Parameter Sampling.
+
 
 ## Key Steps
 
@@ -72,6 +73,7 @@ The key steps in our project were the following:
     * The serve.py python script to provide the model endpoint and see the score method;
     ![Alt text](./Screenshots/step5_swagger_best_model.jpg)
     ![Alt text](./Screenshots/step5_swagger_api_contents.jpg)
+    ![Alt text](./Screenshots/step5_swagger_api_contents_responses.jpg)
 
 6. Consume the model endpoint using the endpoint.py python script and set-up a load-test benchmark for the model using the benchmark.sh shell script and the Apache Benchmark tool:
 
